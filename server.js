@@ -69,7 +69,7 @@ app.post('/thanks', (req, res) => {
     res.render('thanks', { contact: req.body });
 });
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log('listening on at http://localhost:8080');
 });
 

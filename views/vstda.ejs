@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title> Brian's Portfolio </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' href='./css/style.css' type='text/css' />
+  </head>
+  <body>
+    <div>
+        <%- include("navBar.ejs", {selectedTab: "vstda"}) %>
+    
+     <div class="row background">
+        <div class="col vstda1 text"> 
+          <img class="pics text" src="../pics/vstda.png"/>
+        </div>
+        <div class="col text">
+          <p class="p mt-5 mb-5">The Very Simple Todo App was perhaps the hardest project I completed at school. One would think 
+            that creating an app to keep track of a list of items you need to complete would be rather simple.
+            however, what makes this app difficult is all of the functions and components you need to properly handlle
+            each aspect of the app. First you need one component for the left box just to add in new items to the array. then you 
+            need a component for the right box that shows the array of all of your todo items, and a third component that will
+            render if you need to edit any one item.
+          </p>
+        </div>
+        <div class="w-100"></div>
+        <div class="col text">
+          <p class="p mt-5 mb-5">The picture to the right shows what the list looks like when you have several items in the array. As you can see on the 
+            "read a book" todo I have the edit screen showing. In that window you can change the name and/or priority of the todo 
+            along with adding a due by date to it.
+          </p>
+        </div>
+        <div class="col vstda2 text">
+          <img class="pics text" src="../pics/vstdaItems.png"/>
+        </div>
+        <div class="w-100"></div>
+        <div class="col vstda3 text">
+          <img class="pics text" src="../pics/vstdaCode.png"/>
+        </div>
+        <div class="col text">
+          <p class="p mt-5 mb-5">the piece of code to the left shows two functions within my code. the first function will render 
+          the four different colors that you see in the picture above. Red for high priority, yellow for medium priority, blue 
+          for low priority and green for completed. the second function is appropiately named "handle completed". This function 
+          will override the existing priority level and change the banner to green once the user checks off the todo item.</p>
+        </div>
+      </div>
+      </div>
+  </body>
+</html>
+
+
+
+

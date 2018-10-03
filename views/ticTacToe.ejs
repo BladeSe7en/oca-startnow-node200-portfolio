@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title> Brian's Portfolio </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' href='./css/style.css' type='text/css' />
+</head>
+
+<body>
+  <div>
+      <%- include("navBar.ejs", {selectedTab: "ticTacToe"}) %>
+
+    <div class="row background">
+        <div class="col text"> 
+          <img class="pics text" src ="../pics/ticTacToe.png"/>
+        </div>
+        <div class="col text">
+          <p class="p mt-5 mb-5">This Tic Tac Toe game was my first project that I built using React. The game is pretty simple; just two players taking turns placing an X or O in a square, with th first person
+            getting three squares in a row wins. However, starting off completely new to React, the code for me was anything but simple. The biggest challenge I faced with this project 
+            was passing state and props around to other components. 
+          </p>
+        </div>
+        <div class="w-100"></div>
+        <div class="col text">
+          <p class="p mt-5 mb-5">The picture to the right shows a game where Player X just won. Being rather comptitive in most games that I play, I went above and beyond the base project and choose to add in my
+            own leaderboard. This leaderboard keeps track of how many times player X or Player O win and after ten wins it will render a little trophy for the winner.
+          </p>
+        </div>
+        <div class="col text"><img class="pics text" src ="../pics/ticTacToeWin.png"/></div>
+        <div class="w-100"></div>
+        <div class="col text"> <img class="pics text" src ="../pics/ticHistory.png"/></div>
+        <div class="col text">
+          <p class="p mt-5 mb-5">The picture to the left is a piece of my code that handles the history of each move in every game. As you can see in the two pictures above, there are links
+          that keep track of each play made in the game. So if you ever wanted to know what the board looked like two turns ago all you would need to do is click on the particular move and 
+          then the board will rerender to look like it did at that moment.</p>
+        </div>
+      </div>
+    
+  </div> 
+</body>
+
+</html>
+ 
+
+  
+ 
+  

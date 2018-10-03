@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <title> Brian's Portfolio </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel='stylesheet' href='/css/style.css' type='text/css' />
+</head>
+
+<body>
+  <%- console.log(selectedTab)%>
+  <div class="width">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="width">
+        <div class="collapse navbar-collapse flexbox width" id="navbarNav">
+          <!-- needs display:flex -->
+          <div class="nav-left">
+            <ul class="navbar-nav">
+              <!-- wrap all of these li's in a div -->
+              <li class="nav-item ">
+                <a class="nav-link <%= selectedTab == 'index' ? 'active' : '' %>" href="/">Main Page</span></a>
+              </li>
+              <li class="nav-item <%= selectedTab == 'ticTacToe' ? 'active' : '' %>">
+                <a class="nav-link" href="/ticTacToe">Tic Tac Toe</a>
+              </li>
+              <li class="nav-item <%= selectedTab == 'mortgage' ? 'active' : '' %>">
+                <a class="nav-link" href="/mortgage">Mortgage Calculator</a>
+              </li>
+              <li class="nav-item <%= selectedTab == 'change' ? 'active' : '' %>">
+                <a class="nav-link" href="/change">Change Calculator</a>
+              </li>
+              <li class="nav-item <%= selectedTab == 'discordChatApp' ? 'active' : '' %>">
+                <a class="nav-link" href="/discordChatApp">Discord Chat App</a>
+              </li>
+              <li class="nav-item <%= selectedTab == 'topSpots' ? 'active' : '' %>">
+                <a class="nav-link" href="/topSpots">Top Spots</a>
+              </li>
+              <li class="nav-item <%= selectedTab == 'vstda' ? 'active' : '' %>">
+                <a class="nav-link" href="/vstda">VSTDA</a>
+              </li>
+
+              <li class="nav-item <%= selectedTab == 'hangman' ? 'active' : '' %>">
+                <a class="nav-link" href="/hangman">Hangman</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pull-right">
+            <ul>
+              <!-- wrap these in div -->
+              <li class="nav-item navbar-right">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item navbar-right">
+                <a class="nav-link" href="https://github.com/BladeSe7en?tab=repositories">My Repository</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+    </nav>
+  </div>
+</body>
+
+</html>

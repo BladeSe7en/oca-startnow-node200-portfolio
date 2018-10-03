@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title> Brian's Portfolio </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' href='./css/style.css' type='text/css' />
+    
+  </head>
+  <body>
+    <div>
+        <%- include("navBar.ejs", {selectedTab: "topSpots"}) %>
+        
+        <div class="row background">
+            <div class="col top1 text">
+              <img class="pics text" src="../pics/topSpots.png"/>
+            </div>
+            <div class="col text">
+              <p class="p mt-5 mb-5">This app was pretty simple to make. It uses an API created by Origin Coding Academy to map out all thirty events to do in San Diego with a link to Google Maps with its GPS cordinates.</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col text">
+              <p class="p mt-5 mb-5">The picture to the right shows how the code maps over each properties of the Top Spot into each well.</p>
+            </div>
+            <div class="col top2 text">
+                <img class="pics text" src="../pics/topSpots1.png"/>
+            </div>
+            <div class="w-100"></div>
+            <div class="col top3 text">
+              <img class="pics text" src="../pics/topSpot2.png"/>
+            </div>
+            <div class="col text">
+              <p class="p mt-5 mb-5">Ths piece of code the the left shows how I use Origins API and sets the state for each Top Spot.</p>
+            </div>
+          </div>
+  
+      </div>
+    </body>
+    </html>
+    
+
+

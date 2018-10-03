@@ -1,0 +1,89 @@
+body {
+    height: 100%;
+}
+
+
+.pull-right {
+    margin-left: 1em;
+  }
+
+  .index-background {
+    background-image: url("../pics/hotairballoon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: white;
+    border-width: 10 px;
+     height: 100%;
+     width: 100%;
+  }
+  .index-p {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    .p-title {
+        top: 20px;
+        left: 20px;
+    }
+    .div-btn {
+        margin: auto;
+        width: 10%;
+        border: 3px solid green;
+    }
+.background {
+    background-image: url("../pics/hotairballoon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+
+    }
+    .pics {
+        border: 10px solid #ddd;
+        border-radius: 4px;
+        width: 100%;
+    }
+    .flexbox {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .text {
+        background-color: rgba(255, 255, 255, 0.5);
+       
+    }
+    .nav {
+        background-color: green;
+        border: 3px solid green;
+        width: 100%;
+    }
+    /* p {
+        position: absolute;
+        top: auto;
+    } */
+    .contact-form {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 30px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+   .width {
+       width: 100%;
+   }
+
+   .p {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.pull-right {
+   width
+}

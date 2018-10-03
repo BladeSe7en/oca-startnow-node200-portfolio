@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Contact Brian</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel='stylesheet' href='./css/style.css' type='text/css' />
+</head>
+
+<body>
+    <div class="background">
+        <%- include("navBar.ejs", {selectedTab: "contact"}) %>
+
+        <div class="contact-form">
+            <form class="form-horizontal width" action="/thanks" method="POST">
+                <fieldset>
+                    <legend class="text-center">Contact Me</legend>
+
+                    <form action="/thanks" method="POST">
+                        <div class="col-md-9">
+                            <label class="width" for="firstName">First Name:</label>
+                        </div>
+                        <div>
+                            <input class="width" id="firstName" name="firstName" type="text">
+                        </div>
+                        <div>
+                            <label class="width" for="lastName">Last Name:</label>
+                        </div>
+                        <div>
+                            <input class="width" id="lastName" name="lastName" type="text">
+                        </div>
+                        <div>
+                            <label class="width" for="email">Email:</label>
+                        </div>
+                        <div>
+                            <input class="width" id="email" name="email" type="text">
+                        </div>
+                        <div>
+                            <label class="width" for="topic">Topic:</label>
+                        </div>
+                        <div>
+                            <input class="width" id="topic" name="topic" type="text">
+                        </div>
+                        <div>
+                            <label class="width" for="emailContent">Send Me A Message:</label>
+                        </div>
+                        <div>
+                            <textarea class="width" id="emailContent" name="emailContent" rows='5'></textarea>
+                        </div>
+                        <div>
+                            <input class="btn-block" type="submit" />
+                        </div>
+                    </form>
+        </div>
+    </div>
+</body>
+
+</html>

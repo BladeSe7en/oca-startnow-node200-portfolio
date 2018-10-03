@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title> Brian's Portfolio </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' href='./css/style.css' type='text/css' />
+  </head>
+  <body>
+    <div class='text'>
+        <%- include("navBar.ejs", {selectedTab: "change"}) %>
+  
+   <div class="row background">
+      <div class="col text">
+      <img class="pics text" src="../pics/change1.png"/>
+    </div>
+      <div class="col text">
+        <p class="p mt-4 mb-4">As part of my react projects that I completed I had to create a simple change calculator. This calcuclator takes in 
+          two inputs from the user; The Total Amount Due and the Total Amount Received. This code is helpful for any business 
+          that deals with cash transactions to tell their cashiers exactly how much change to be used. Furthermore, if the business 
+          owner wanted to increase effiency even more, they could install automated change dispensers. That change dispenser 
+          could use this code to trigger the machine to dispense exactly how many coins to give the customer.
+        </p>
+      </div>
+      <div class="w-100">
+      </div>
+      <div class="col text">
+        <p class="p mt-4 mb-4">One the user enters those values into the input fields and clicks the claculate button my code will run my calculate funtion and return
+          the values for total change due and all of the demoninations.
+        </p>
+      </div>
+      <div class="col text">
+          <img class="pics text" src="../pics/change.png"/>
+      </div>
+      <div class="w-100"></div>
+      <div class="col text">
+          <img class="pics text" src="../pics/changeCalc.png"/>
+      </div>
+      <div class="col text">
+        <p class="p mt-4 mb-4">Here you can see part of my calculate function that I mentioned above. to start off with I named 
+          all of my variables at the top of the calculate function's scope. Then for the calculation the code will find the 
+          difference between the two inputs that the user entered. from there the code will run through a series of If/Else 
+        statements to find out exactly how many of each denomination to give out. For example, the code will divide the total change 
+      due by twenty to find out how many twenty dollar bills to dispense. It  uses the method Math.floor() to return only 
+    the whole number bills to give out. After that, the code will redefine the value of the total change due to equal change due minus the value 
+  of twenties. The code will hit the else statement if the total change due is less than the denomination and set that 
+value to zero before moving on to the smaller denominations.</p>
+      </div>
+    </div>
+      </div>
+  </body>
+</html>
+
+
+
+  
+
+  
+
+  
+ 

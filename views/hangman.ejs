@@ -9,21 +9,30 @@
         <%- include("navBar.ejs", {selectedTab: "hangman"}) %>
        <div class="row background">
           <div class="col text">
+              <a className="link" 
+              onclick="window.open(document.URL, '_blank');"
+             href="https://bpc-vstda.herokuapp.com/">
+             Click Here To View My Hangman's Website
+                </a>
             <img class="pics text" src="../pics/hangmanTitle.png"/>
           </div>
           <div class="col text">
-            <p class="p mt-4 mb-4">Hangman was a side project that I completed outside of my class. The picture you see to the left is the main landing page. This page gives the 
-              user a brief introduction to how the game works. I have plans in the future to add more functionality to this app by adding a leaderboard, a hint 
-              button that would use one strike to give the user a synonym of the word or use an addional strike to get the definition of the word as well. To start
-              the game the user must enter in a catagory and hit the start game button.
+            <p class="p mt-4 mb-4">Hangman was a side project that I completed outside of my class. The picture you see to the left is the main landing page. 
+              This page gives the user a brief introduction to how the game works. To start the game the user must enter in a catagory and hit the start game button.
+              In the future I will be adding more functionality to this app by adding a leaderboard, as well as a hint button which would expend strikes in exchange--
+              first for a synonym, then for a definition.
+
+                
+
             </p>
           </div>
           <div class="w-100"></div>
           <div class="col text">
-            <p class="p mt-4 mb-4">The picture to the right is the main game page. on this page you can see the main gallow where the charactor will render when you guess correctly. 
-              The input guess box only accepts one letter at a time and upon hitting the guess button it will run a function that will check if that selected letter 
-              is in current word. from there it will render the letter in the mapped out word, keep a list of all letters guessed and add on segment of the charactor 
-              on the gallow if you guess incorrectly.
+            <p class="p mt-4 mb-4">The picture to the right is the main game page. On this page you can see the main gallow where the character will render when you guess incorrectly. 
+              The input guess box only accepts one letter at a time and after clicking the guess button, a function will determine if the entered letter 
+              is in the current word. From there, it will rerender, replacing the corresponding black spaces with the correct letters. alternatively, Any incorrect guess will rerender the gallows
+              with one extra body part. All guesses will be recorded at the top of the page. 
+             
             </p>
           </div>
           <div class="col text">
@@ -34,10 +43,9 @@
             <img class="pics text" src="../pics/hangman-word.png"/>
           </div>
           <div class="col text">
-            <p class="p mt-4 mb-4">The picture to the left is one portion of my code that handles selecting the current word. To do this, my code takes the catagory the user entered
-              and sends it to the datamuse.com API. The response returns 100 different words in an array of objects. The code then uses Math.random() to select 
-              a random number to use as the index selector in the array. Finally, this function will take selected word, split the word into an array for the map 
-              function, and set the state of the current word.
+            <p class="p mt-4 mb-4">To the left is the portion of my code which selects the current word. To do this, my code accepts an input, category, from the user
+              and makes a request of the datamuse.com API. The response returns 100 different words in an array of objects. The code then uses Math.random() to generate
+              index of the array. Finally, this function will take selected word, split the word into an array for the map function, and set the state of the current word.
             </p>
           </div>
         </div>

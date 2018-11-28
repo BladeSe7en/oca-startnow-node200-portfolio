@@ -10,7 +10,28 @@
     <div>
         <%- include("navBar.ejs", {selectedTab: "index"}) %>
       </div>
-      <div class="index-background">
+      <div id='parallax'>
+      <img class='pic-0' src='../pics/hotairballoon_0.png'/>
+      <img class='pic-1' src='../pics/hotairballoon_1.png'/>
+      <img class='pic-2' src='../pics/hotairballoon_2.png'/>
+      <img class='pic-3' src='../pics/hotairballoon_3.png'/>
+      <img class='pic-4' src='../pics/hotairballoon_4.png'/>
+      <img class='pic-5'/>
+
+    </div>
+  
+     <script >
+     window.addEventListener('scroll', () => {
+      let parent = document.getElementById('parallax');
+      let children = parent.getElementsByTagName('img');
+      for(let i = 0; i < children.length; i++) {
+        children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+      }
+   }, false) 
+   </script>
+
+
+      <div class="about_me" id="about_me">
         <div class="index-title">
           <h1>Brian's Portfolio</h1>
           <div class= "index-p">
@@ -36,7 +57,69 @@
           </div>
 
         </div>
+        <div class='skills'>
+        
+              <h1 class='skill_title'>My Skills</h1>
+             
+              <p class='skill_title'>JavaScript</p>
+              <div class="container">
+                <div class="skills js">90% proficient</div>
+              </div>
+              
+              <p class='skill_title'>React</p>
+              <div class="container">
+                <div class="skills react">95% proficient</div>
+              </div>
 
+              <p class='skill_title'>React Redux</p>
+              <div class="container">
+                <div class="skills redux">95% proficient</div>
+              </div>
+
+              <p class='skill_title'>Express</p>
+              <div class="container">
+                <div class="skills express">80% proficient</div>
+              </div>
+
+              <p class='skill_title'>Node.js</p>
+              <div class="container">
+                <div class="skills node">75% proficient</div>
+              </div>
+
+              <p class='skill_title'>Loopback</p>
+              <div class="container">
+                <div class="skills loopback">70% proficient</div>
+              </div>
+
+              <p class='skill_title'>MongoDB</p>
+              <div class="container">
+                <div class="skills mongo">60% proficient</div>
+              </div>
+
+              <p class='skill_title'>mySQL</p>
+              <div class="container">
+                <div class="skills sql">60% proficient</div>
+              </div>
+
+              <p class='skill_title'>css/less/sass/html</p>
+              <div class="container">
+                <div class="skills style">85% proficient</div>
+              </div>
+
+              <p class='skill_title'>GIT</p>
+              <div class="container">
+                <div class="skills git">95% proficient</div>
+              </div>
+
+              <p class='skill_title'>Jira</p>
+              <div class="container">
+                <div class="skills jira">90% proficient</div>
+              </div>
+
+              <p class='skill_title'>JQuery</p>
+              <div class="container">
+                <div class="skills jquery">90% proficient</div>
+              </div>
       </div>
   </body>
 </html>

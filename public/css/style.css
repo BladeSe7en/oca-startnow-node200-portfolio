@@ -84,3 +84,98 @@ body {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.75);
 }
+.paralax {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+}
+.pic-0 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+.pic-1 {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+}
+.pic-2 {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+}
+.pic-3 {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+}
+.pic-4 {
+    background-position: bottom center;
+    background-size: auto 1038px;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+.pic-5 {
+    background-position: bottom center;
+    background-size: auto 1038px;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    z-index: 5;
+    background-color: #fffbf1; 
+    
+}
+body {
+    background-image: url(../pics/hotairballoon_5.png);
+    background-repeat: no-repeat;
+    background-attachment: inherit
+}
+.about_me {
+    margin-top:100vh;
+    top: 0;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background-color: #fffbf1; 
+    transform: translateY(-170.4px);
+}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+    padding-left: 0px;
+  }
+
+.skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+  }
+  
+  .js {width: 90%; background-color: #f44336;}
+  .react {width: 95%; background-color: #4CAF50;}
+  .redux {width: 95%; background-color: #2196F3;}
+  .express {width: 80%; background-color: #78db1b;}
+  .node {width: 75%; background-color: #a9be30;}
+  .loopback {width: 70%; background-color: #671bad;}
+  .mongo {width: 60%; background-color: #a427a8;}
+  .sql {width: 60%; background-color: #304e85;}
+  .style {width: 85%; background-color: #1e663e;}
+  .git {width: 95%; background-color: #1d0858;}
+  .jira {width: 90%; background-color: #802b2b;}
+  .jquery {width: 90%; background-color: #d0fd08;}
+
+  .skill_title {
+      text-align: center;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+  }

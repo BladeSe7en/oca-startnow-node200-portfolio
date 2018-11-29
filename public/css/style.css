@@ -167,8 +167,8 @@ body {
   .express {width: 80%; background-color: #78db1b;}
   .node {width: 75%; background-color: #a9be30;}
   .loopback {width: 70%; background-color: #671bad;}
-  .mongo {width: 60%; background-color: #a427a8;}
-  .sql {width: 60%; background-color: #304e85;}
+  .mongo {width: 70%; background-color: #a427a8;}
+  .sql {width: 70%; background-color: #304e85;}
   .style {width: 85%; background-color: #1e663e;}
   .git {width: 95%; background-color: #1d0858;}
   .jira {width: 90%; background-color: #802b2b;}
